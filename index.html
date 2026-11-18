@@ -1,0 +1,48 @@
+<!-- ESTRUTURA BÁSICA EM HTML -->
+<!doctype html>
+<html lang="pt+br">
+  <head>
+    <!-- meta: tag para configuração -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE = TÍTULO DA ABA -->
+    <title>AULA HTML</title>
+  </head>
+  <body>
+    <main>
+      <button onclick="mudarTema()">Alterar tema</button>
+      <!-- Título Principal (h1 - h6) -->
+      <h1>Desenvolvimento Web</h1>
+      <!-- Parágrafo -->
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab in quo
+        blanditiis, unde veniam repudiandae voluptatibus repellendus delectus.
+        Exercitationem nihil aliquid dolor cumque asperiores dicta a praesentium
+        reprehenderit magnam qui.
+      </p>
+      <h2>HTML - Linguagem de Marcação de Hipertexto</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, maiores.
+      </p>
+      <h6>Último nível de título</h6>
+      <!-- Links Externo -->
+      <a href="https://google.com.br">Ir para o Google</a>
+      <!-- Link Interno -->
+      <a href="segundaPag.html">Ir para detalhes</a>
+    </main>
+    <script>
+      function mudarTema() {
+        document.body.classList.toggle("mode");
+      }
+    </script>
+  </body>
+  <style>
+    body {
+      background-color: cadetblue;
+    }
+    .mode {
+      background-color: rgb(201, 239, 10);
+      color: brown;
+    }
+  </style>
+</html>
